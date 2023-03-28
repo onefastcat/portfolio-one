@@ -1,0 +1,298 @@
+@font-face {
+
+    font-family: 'Cutive';
+
+    src: local('Cutive'),
+    url("../assets/fonts/CutiveMono-Regular.ttf");
+
+
+}
+html {
+    background-color: rgb(254, 249, 249);
+    color:rgb(72, 72, 72);
+    font-family: "Cutive";
+}
+body {
+
+    margin: 0;
+    /* color:rgb(168, 168, 168);
+    font-family: "Virtuous"; */
+}
+
+#root {
+
+    border: 1px solid grey;
+    margin: 10px;
+
+}
+
+.nav {
+    height: 3vh;
+
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    width: fit-content;
+
+}
+
+.content {
+    margin: 40px 40px;
+}
+
+.about {
+    height: 30vh;
+}
+
+.projects-btn {
+    height: 250px;
+
+}
+
+.home-contact {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    font-size: 12px;
+    margin-left: 85%;
+    margin-right: 10%;
+    margin-top: 3em;
+    width: 20em;
+}
+
+button {
+    border: 1px solid grey;
+    background-color: rgba(255, 248, 246, 0.699);
+    height: 30px;
+    width: 80px;
+}
+
+button:hover {
+    border: 1px solid rgb(205, 86, 0);
+    color: rgb(205, 86, 0);
+    cursor:pointer;
+}
+
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+   border-bottom: solid 1px grey;
+}
+
+a:link {
+    color: #141414;
+}
+
+.fastingImg {
+    width: 100%;
+    border-radius: 10px;;
+}
+
+.projects-container {
+    height: 100vh;
+    margin: 5vh 1vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem 3rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.project-pic {
+    border: 0;
+    border-radius: 10px;
+    width: 40%;
+    height: 100%;
+    background: rgb(72, 23, 117);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity .5s ease-in;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity .5s ease-in;
+}
+
+#outerText {
+    font-size: 28px;
+    padding: 20% 0 0 0;
+}
+
+#innerText {
+    position: relative;
+    top: 10%;
+
+}
+
+.pic {
+    transition: 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+
+}
+
+figure {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    display:block;
+    margin:0;
+    height: 100%;
+    width: 100%; */
+
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 80%;
+    padding: 20px;
+}
+
+.overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(16, 16, 98, 0.55); */
+    z-index: 10;
+
+}
+
+.overlay h2 {
+    position: absolute;
+    width: 50%;
+
+
+    left: 25%;
+    color: rgb(242, 241, 241);
+    font-size: 37px;
+
+}
+
+.overlay-1-narrow {
+    position: absolute;
+    width: 100%;
+    height:60%;
+    top: 20%;
+    align-items: baseline;
+    color: rgb(242, 241, 241);
+    background-color:  rgba(16, 34, 171, 0.512);
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.overlay-2-narrow {
+    position: absolute;
+    width: 100%;
+    height:55%;
+    top: 25%;
+    align-items: baseline;
+    color: rgb(242, 241, 241);
+    background-color: rgba(4, 15, 98, 0.499);
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:block;
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+
+.column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.column{
+    width:100%;
+    height: 100%;
+}
+
+.dark-purple{
+    background-color: #3273a448;
+ }
+.dark-purple img{
+    -webkit-filter: grayscale(100%) contrast(1.2);
+    filter: grayscale(100%) contrast(.4);
+    mix-blend-mode: lighten;
+}
+
+.project-desc {
+    flex: 1.5;
+    padding-left: 7%;
+    text-align: end;
+}
+
+.project-desc > h3{
+   margin: 0;
+}
+
+/* .contact-info {
+    padding: 30px 30px;
+} */
+
+.about-me-container {
+    margin: 10% 20%;
+
+    font-size: 20px;
+}
