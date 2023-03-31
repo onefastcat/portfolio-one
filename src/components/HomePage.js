@@ -25,7 +25,7 @@ function HomePage() {
                     <button className="btn-scroll" onClick={handleClickScroll}>Projects</button>
                 </div>
                 <div className="home-contact">
-                    <div className='email-div'>Email: a.kho.meow@gmail.com</div>
+                    <div className='email-div'>Email: anastasiakho888@gmail.com</div>
                     <div className='phone-div'>Phone: +1 (646) 937-4286</div>
                 </div>
             </div>
