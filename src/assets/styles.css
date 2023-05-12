@@ -50,12 +50,16 @@ body {
 }
 
 .about {
-    height: 30vh;
+    height: 10vh;
 }
 
-.projects-btn {
-    height: 250px;
+.projects-cont {
+    height: 300px;
+}
 
+.btn-scroll {
+    font-size: 18px;
+    width:fit-content;
 }
 
 .home-contact {
@@ -86,8 +90,8 @@ button:hover {
 
 a {
     font-weight: 700;
-    text-decoration: none;
-    color: grey;
+    color: rgba(13, 65, 178, 0.736);
+    margin-left: 20px;
 }
 
 a:hover {
@@ -170,16 +174,6 @@ a:link {
 
 }
 
-figure {
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    display:block;
-    margin:0;
-    height: 100%;
-    width: 100%; */
-
-}
 
 figcaption {
     display: flex;
@@ -198,16 +192,12 @@ figcaption {
     position: relative;
     height: 100%;
     width: 100%;
-    /* background: rgba(16, 16, 98, 0.55); */
     z-index: 10;
-
 }
 
 .overlay h2 {
     position: absolute;
     width: 50%;
-
-
     left: 25%;
     color: rgb(242, 241, 241);
     font-size: 37px;
@@ -284,15 +274,21 @@ img {
 }
 
 .project-desc > h3{
-   margin: 0;
+    margin: 0;
 }
 
-/* .contact-info {
-    padding: 30px 30px;
-} */
 
 .about-me-container {
     margin: 10% 20%;
-
     font-size: 20px;
+}
+
+.home-contact div {
+    padding-right: 22px;
+}
+
+@media screen and (max-width: 1250px) {
+    .home-contact {
+        margin-left: 0;
+    }
 }

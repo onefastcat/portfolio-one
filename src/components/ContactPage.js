@@ -6,7 +6,7 @@ function ContactPage() {
         <>
         <div className='contact-info'>
             <div className="phone">
-                Phone: +1 646 937 4286
+                Phone: (646) 937-4286
             </div>
             <div className='email'>
                 Email: anastasiakho888@gmail.com
